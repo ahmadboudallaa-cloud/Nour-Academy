@@ -1,0 +1,117 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--blue : #13538A;
+--orange : #F28D2B;
+--blanc-casser : #CDDAE6;
+--font-texte : "Poppins", sans-serif;
+--font-titre :  "Lora", serif;
+--size-Titre1 : ;
+--size-Titre2 : ;
+--size-Titre3 : ;
+
+
+}
+body{
+    background-color: var(--blue);
+}
+a{
+    text-decoration: none;}
+.nav-barre{
+
+    width: 80%;
+    height: 80px;
+    margin: 20px auto ;
+    background-color: var(--blanc-casser);
+    border-radius: 50px;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.nav-barre .logo{
+    height: 80%;
+    width: 150px;
+     margin-left: 50px;
+    
+}
+.navigation{
+    display: flex;
+    gap: 20px;
+    
+   
+}
+.navigation a{
+    font-size: 18px;
+    color: black;
+    font-family: var(--font-texte);
+}
+.navigation .selectionner {
+
+    background-color: var(--orange);
+    padding: 3px 15px;
+    border-radius: 30px;
+    color: white;
+    
+}
+.panier-account{
+    display: flex;  
+    
+   
+   
+    
+}
+
+.panier-logo{
+    background-color: var(--orange);
+    width: 25%;
+    padding: 5px;
+    border-radius: 100%;
+    position: relative;
+
+     
+    
+}
+.panier-logo img{
+   height: auto;
+    width: 100%;
+
+}
+.number{
+    background-color: var(--blue);
+     padding:  1px 3px;
+    border-radius: 100%;
+    position: absolute;
+    color: white;
+  font-size: 12px;
+  margin-left: 24px;
+ 
+}
+.panier-compte{
+    display: flex;
+    height: 45%;
+}
+.account{
+    position: absolute;
+    
+    
+}
+.account img{
+   width: 70%;
+  
+ margin-left: 45px;
+   border: #F28D2B 2px solid;
+   border-radius: 100%;
+   padding: 3px;
+
+
+   
+}
+
+
+
+
