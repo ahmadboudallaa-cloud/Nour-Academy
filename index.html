@@ -14,6 +14,17 @@
     <nav class="nav-barre">
         <img class="logo" src="./images/logo.webp" alt="">
 
+        <div class="burger">
+            <input type="checkbox" >
+            <summary style="display: none;">
+                <span>Accueil</span>
+                <span>A propos</span>
+                <span>Nos cours</span>
+                <span>Contact</span>
+            </summary>
+
+        </div>
+
         <div class="navigation">
             <a href="#accueil" class="selectionner">Accueil</a>
             <a href="#propos">A propos</a>
@@ -106,6 +117,73 @@
 
             </div>
 
+
+            <div class="filtre">
+                <h4>Filtrer les cours</h4>
+
+                <div class="select">
+                    <label for="nivaux">Nivaux</label>
+                    <select name="nivaux" id="nivaux">
+                        <option value="tous">Tous les Nivaux</option>
+                        <option value="bac1">1 Bac</option>
+                        <option value="bac2">2 Bac</option>
+                        <option value="Tronc">Tronc Commun</option>
+                        <option value="college">3eme annee college</option>
+                    </select>
+                </div>
+
+                  <div class="select">
+                    <label for="matiere">Matiere</label>
+                    <select name="matiere" id="matiere">
+                        <option value="tous">Tous les matieres</option>
+                        <option value="math">Math</option>
+                        <option value="physique">Physique</option>
+                        <option value="svt">SVT</option>
+                        <option value="francais">Francais</option>
+                        <option value="anglais">Anglais</option>
+                    </select>
+                </div>
+                <p>12 cours disponibles</p>
+
+            </div>
+
+
+
+            <div class="cartes-cours">
+                <div class="carte">
+                    <img src="./images/math.webp" alt="image du cours">
+    
+                    <p id="nivaux">Primaire</p>
+                    <div class="info-carte">
+                    <h3>Mathématiques </h3>
+                    <p>Lundi & mercredi · 16h</p>
+                    </div>
+
+                    <div class="info-prix">
+                        <div class="prix-carte">
+                        <p id="prix">350</p>
+                        <div class="info">
+                            
+                        <p >MAD / Mois</p>
+                        </div>
+                        </div>
+                        <button id="btn-carte"> Selectioner</button>
+
+                    </div>
+
+                    <p id="place">8 places restants</p>
+                   
+                </div>
+
+               
+
+
+
+               
+
+
+            </div>
+
         </section>
 
 
@@ -114,6 +192,35 @@
     </main>
 
 
+   <footer>
+    <div class="ecole">
+        <img src="./images/logo.webp" alt="logo de l'ecole">
+        <h3>Apprendre aujourd'hui, réussir demain.</h3>
+        <p>Des cours de soutien scolaire et de langues pour accompagner chaque élève vers la réussite.</p>
+    </div>
+     <div class="ecole">
+        <h3>Nos centres</h3>
+        <p>Nador Centre</p>
+        <p>Hay Al Matar</p>
+        <p>Selouane</p>
+    </div>
+    <div class="ecole">
+        <h3>Navigation</h3>
+        <a href="#">Accueil</a>
+        <a href="#">A propos</a>
+        <a href="#">Nos cours  </a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="ecole">
+        <h3>Contact</h3>
+        <p>contact@nouracademy.ma</p>
+        <p>+212 7 06  55 55 00</p>
+    </div>
+    
+
+
+
+   </footer>
 
 
 
@@ -127,8 +234,7 @@
 
 
 
-
-  <script src="./js/main.js"></script>  
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
