@@ -321,6 +321,7 @@ margin-top: 40px;
  
 }
 .carte {
+    max-width: 100%;
     width: 80%;
     background-color: var(--orange);
     border-radius: 30px;
@@ -400,6 +401,7 @@ margin-top: 40px;
 .cartes-cours {
     margin-top: 20px;
     display: grid;
+    gap: 20px;
     justify-items: center;
 }
 
@@ -424,6 +426,143 @@ footer h3 {
 .ecole a{
     color: black;
     display: flex;
+    
+}
+.selectes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.nav-barre{
+    width: 95%;
+}
+
+.info-hero p {
+    font-size: 15px;
+    width: 50%;
+}
+
+.text-hero h1{
+    font-size: 60px;
+    line-height: 80px;
+    
+}
+
+.info-hero .text-hero p{
+
+    font-size: 25px;
+}
+
+.info-hero{
+    margin-left: 40px;
+    
+}
+
+#button-hero{
+    font-size: 25px;
+    
+}
+
+.hero-section {
+    margin-top: 60px;
+}
+
+.hero-section img{
+
+    height: 500px;
+}
+.propos{
+    margin-left: 40px;
+}
+.titre-section h2{
+
+    font-size: 40px;
+}
+.titre-section img{
+    width: 90pxq;
+}
+.propos-texte-complet h3{
+    font-size: 35px;
+}
+.propos-texte-complet p{
+    font-size: 25px;
+}
+
+.propos-carte1 h3 {
+    font-size: 35px;
+}
+.propos-carte1 p{
+    font-size: 25px;
+    margin-left: 20px;
+    
+}
+.propos-carte1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+#cours{
+    margin-left: 40px;
+}
+.cours-texte h3{
+    font-size: 35px;
+}
+.cours-texte p{
+    font-size: 25px;
+}
+
+
+.filtre h4{
+    font-size: 30px;
+}
+.select{
+    width: 45%;
+}
+
+.select label{
+    font-size: 25px;
+
+}
+.select select {
+    font-size: 25px;
+}
+.selectes{
+    flex-direction: row;
+
+    
+}
+.filtre p{
+    font-size: 18px;
+}
+.cartes-cours{
+    grid-template-columns: repeat(2,1fr);
+    margin-right: 40px;
+    gap: 20px;
+}
+.carte{
+    width: 100%;
+}
+
+footer h3{
+    font-size: 35px;
+     margin-left: 40px;
+}
+
+footer p{
+    font-size: 25px;
+     margin-left: 40px;
+}
+footer a{
+    font-size: 25px;
+     margin-left: 40px;
+}
+
     
 }
 
