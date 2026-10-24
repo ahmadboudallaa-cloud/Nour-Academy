@@ -25,7 +25,7 @@ a{
     text-decoration: none;}
 .nav-barre{
 
-    width: 80%;
+    width: 90%;
     height: 80px;
     margin: 20px auto ;
     background-color: var(--blanc-casser);
@@ -44,7 +44,6 @@ a{
 }
 .navigation{
     display: flex;
-    gap: 20px;
     display: none ;
     
    
@@ -566,6 +565,130 @@ footer a{
     
 }
 
+@media screen and (min-width:1080px ){
+
+   .nav-barre{
+    width: 85%;
+   }
+   .navigation{
+    display: block;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+   }
+   .info-hero p{
+    width: 50%;
+    font-size: 12px;
+    
+   }
+   .hero-section{
+    flex-direction: row;
+    margin: 0 100px;
+    margin-top: 50px;
+   }
+   .hero-section img{
+    width: 40%;
+   }
+
+   .text-hero h1{
+    font-size: 55px;
+   }
+   .info-hero .text-hero p{
+    font-size: 30px;
+    font-weight:300;
+    
+   
+   }
+
+   #button-hero{
+    font-size: 20px;
+    width: 40%;
+    margin-top: 20px;
+   }
+
+   .info-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+   .propos{
+    margin: 150px 100px;
+   }
+   .titre-section h2{
+    font-size: 45px;
+
+   }
+   .titre-section img{
+    width:100px ;
+   }
+   .titre-section{
+    gap: 20px;
+   }
+   .propos-texte-complet h3{
+
+    width: 50%;
+   }
+   .propos-texte-complet p{
+    font-weight: 400;
+    font-size: 25px;
+   }
+   .propos-carte{
+    flex-direction: row;
+    width: 70%;
+   }
+   .propos-texte-complet{
+    gap: 50px;
+   }
+  .titre-carte1 h3{
+    font-size: 30px;
+  }
+  .titre-carte1 img{
+    width: 15%;
+  }
+  #cours{
+    margin: 0 100px;
+  }
+  .selectes{
+    width: 50%;
+  }
+  .cartes-cours{
+    grid-template-columns: repeat(4,1fr);
+   
+
+  }
+  footer{
+   display: flex;
+   align-items: flex-end;
+   padding-left: 100px;
+  }
+  .footer-par1{
+     width: 50%;
+  }
+  .ecole h3{
+    font-size: 20px;
+  }
+  .ecole p{
+    font-size: 15px;
+  }
+  .footer-par1 img{
+    width: 50%;
+   
+  }
+  .ecole a{
+    font-size: 15px;
+  }
+  .footer-par2{
+    margin: 0;
+  }
+  #ecole-2{
+    padding: 20px 0;
+    
+  }
+  
+
+}
 
 
 
