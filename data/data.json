@@ -1,0 +1,95 @@
+
+{
+  "cours": [
+    {
+      "id": 1,
+      "matiere": "Math",
+      "niveau": "1 Bac",
+      "prix": 250
+    },
+    {
+      "id": 2,
+      "matiere": "Physique",
+      "niveau": "1 Bac",
+      "prix": 300
+    },
+    {
+      "id": 3,
+      "matiere": "SVT",
+      "niveau": "1 Bac",
+      "prix": 220
+    },
+    {
+      "id": 4,
+      "matiere": "Français",
+      "niveau": "1 Bac",
+      "prix": 180
+    },
+    {
+      "id": 5,
+      "matiere": "Anglais",
+      "niveau": "1 Bac",
+      "prix": 200
+    },
+    {
+      "id": 6,
+      "matiere": "Math",
+      "niveau": "2 Bac",
+      "prix": 350
+    },
+    {
+      "id": 7,
+      "matiere": "Physique",
+      "niveau": "2 Bac",
+      "prix": 400
+    },
+    {
+      "id": 8,
+      "matiere": "SVT",
+      "niveau": "2 Bac",
+      "prix": 320
+    },
+    {
+      "id": 9,
+      "matiere": "Français",
+      "niveau": "2 Bac",
+      "prix": 230
+    },
+    {
+      "id": 10,
+      "matiere": "Anglais",
+      "niveau": "2 Bac",
+      "prix": 250
+    },
+    {
+      "id": 11,
+      "matiere": "Math",
+      "niveau": "Tronc Commun",
+      "prix": 220
+    },
+    {
+      "id": 12,
+      "matiere": "Physique",
+      "niveau": "Tronc Commun",
+      "prix": 270
+    },
+    {
+      "id": 13,
+      "matiere": "Français",
+      "niveau": "3eme annee college",
+      "prix": 160
+    },
+    {
+      "id": 14,
+      "matiere": "Math",
+      "niveau": "3eme annee college",
+      "prix": 190
+    },
+    {
+      "id": 15,
+      "matiere": "Anglais",
+      "niveau": "Tronc Commun",
+      "prix": 210
+    }
+  ]
+}

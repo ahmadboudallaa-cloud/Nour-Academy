@@ -10,20 +10,22 @@
 --blanc-casser : #CDDAE6;
 --font-texte : "Poppins", sans-serif;
 --font-titre :  "Lora", serif;
---size-Titre1 : ;
---size-Titre2 : ;
---size-Titre3 : ;
+--size-Titre1-mobile : 34px;
+--size-Titre2-mobile : 28px;
+--size-Titre3-mobile : 22px; 
+--size-text-mobile : 10px;
 
 
 }
 body{
     background-color: var(--blue);
+   
 }
 a{
     text-decoration: none;}
 .nav-barre{
 
-    width: 80%;
+    width: 90%;
     height: 80px;
     margin: 20px auto ;
     background-color: var(--blanc-casser);
@@ -31,6 +33,7 @@ a{
     display: flex;
   align-items: center;
   justify-content: space-between;
+   
  
 }
 .nav-barre .logo{
@@ -41,7 +44,7 @@ a{
 }
 .navigation{
     display: flex;
-    gap: 20px;
+    display: none ;
     
    
 }
@@ -111,6 +114,590 @@ a{
 
    
 }
+.info-hero p{
+ font-size: var(--size-text-mobile);
+ background-color: var(--blanc-casser);
+ width: 65%;
+ text-align: center;
+ border-radius: 20px;
+ padding: 2px 0;
+ font-family: var(--font-texte);
+
+
+}
+
+.info-hero{
+    margin-left: 10px;
+    
+}
+
+.info-hero .text-hero p{
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    color: white;
+    font-family: var(--font-texte);
+    font-size: 15px;
+    width: 90%;
+}
+
+.text-hero h1{
+
+    color: var(--orange);
+    font-family: var(--font-titre);
+    font-size:var(--size-Titre1-mobile);
+    font-weight: bold;
+    line-height: 50px;
+    
+}
+.text-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#button-hero{
+    background-color: var(--orange);
+    color: white;
+    width: 40%;
+    border-radius: 30px;
+    padding: 13px 5px ;
+    border: none;
+}
+.hero-section img {
+    width: 95%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    border: var(--orange) 3px solid;
+    
+    
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.titre-section{
+    display: flex;
+    align-items: center;
+}
+.titre-section img {
+    width: 70px;
+}
+.titre-section h2{
+    font-size: var(--size-Titre2-mobile);
+    color: var(--orange);
+    font-family: var(--font-titre);
+    font-weight: bold;
+
+}
+.propos {
+    margin: 40px 0 0 5px;
+    
+}
+.propos-texte-complet h3{
+    color: var(--blanc-casser);
+    font-size: var(--size-Titre3-mobile);
+    font-family: var(--font-titre);
+    
+}
+.propos-texte-complet{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.propos-texte {
+    font-size: var(--size-text-mobile);
+    font-family: var(--font-texte);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 98%;
+}
+.propos-carte1{
+    background-color: var(--orange);
+    width: 90%;
+    border-radius: 30px;
+    padding: 20px 10px;
+}
+.titre-carte1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.titre-carte1 img{
+    width: 20%;
+}
+.titre-carte1 h3{
+    font-size: var(--size-Titre3-mobile);
+    color: var(--blue);
+}
+.propos-carte1 p{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+.propos-carte{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+#cours{
+margin-top: 40px;
+}
+.cours-texte {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 8px;
+
+}
+.cours-texte h3 {
+    color: var(--blanc-casser);
+    font-size: var(--size-Titre3-mobile);
+    font-family: var(--font-titre);
+
+}
+
+
+.cours-texte p{
+    color: white;
+    font-size: var(--size-text-mobile);
+    font-family: var(--font-texte);
+}
+.filtre h4{
+    color: var(--orange);
+    font-size: 15px;
+}
+.filtre {
+    margin: 20px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.filtre p{
+    color: white;
+    font-family: var(--font-texte);
+    font-weight: bold;
+    font-size: 10px;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.select label{
+    background-color: var(--blanc-casser);
+    padding: 5px 0 0 5px;
+    color: var(--blue);
+    border-radius: 8px 8px 0 0;
+    border: transparent;
+    font-size: 15px;
+   
+}
+.select select{
+    background-color: var(--blanc-casser);
+     padding:  0 0 5px 0;
+    border-radius:0 0 8px 8px;
+    border: transparent;
+     font-size: 15px;
+}
+
+.carte img {
+ width: 95%;
+ height: 190px;
+ margin: auto;
+ display: block; 
+ object-fit: cover;
+ border-radius: 30px;
+ 
+}
+.carte {
+    max-width: 100%;
+    width: 80%;
+    background-color: var(--orange);
+    border-radius: 30px;
+    padding: 6px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+   
+   
+}
+.carte #nivaux {
+    background-color: var(--blue);
+    width: 25%;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 3px 0;
+    margin-left: 10px;
+}
+.info-carte {
+    margin-left: 10px;
+   
+}
+.info-carte h3 {
+    font-family: var(--font-titre);
+    font-size: var(--size-Titre3-mobile);
+    color: var(--blue);
+}
+.info-carte p{
+    color: white;
+    font-family: var(--font-texte);
+    font-size: 10px;
+}
+
+.prix-carte {
+    display: flex;
+    
+}
+.prix-carte #prix{
+    font-size: 30px;
+    font-family: var(--font-texte);
+    color: var(--blue);
+    font-weight: bold;
+
+}
+
+.info{
+    display: flex;
+    align-items: end;
+    padding: 0 0 8px 5px;
+    
+}
+.info p{
+    font-size: 15px;
+    font-family: var(--font-texte);
+    color: var(--blanc-casser);
+}
+
+#btn-carte{
+    background-color: var(--blue);
+    border: none;
+   font-size: 18px;
+    border-radius: 30px;
+    padding: 0 10px;
+    color: white;
+}
+.info-prix {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+#place {
+    margin-left: 12px;
+    color: white;
+}
+.cartes-cours {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--blanc-casser);
+    margin-top: 40px;
+}
+.ecole img{
+    width: 80%;
+    margin-bottom: 15px;
+}
+footer h3 {
+    color: var(--orange);
+    font-size: var(--size-Titre3-mobile);
+    font-family: var(--font-titre);
+}
+.ecole {
+    padding: 30px 10px;
+}
+
+.ecole a{
+    color: black;
+    display: flex;
+    
+}
+.selectes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.nav-barre{
+    width: 95%;
+}
+
+.info-hero p {
+    font-size: 15px;
+    width: 50%;
+}
+
+.text-hero h1{
+    font-size: 60px;
+    line-height: 80px;
+    
+}
+
+.info-hero .text-hero p{
+
+    font-size: 25px;
+}
+
+.info-hero{
+    margin-left: 40px;
+    
+}
+
+#button-hero{
+    font-size: 25px;
+    
+}
+
+.hero-section {
+    margin-top: 60px;
+}
+
+.hero-section img{
+
+    height: 500px;
+}
+.propos{
+    margin-left: 40px;
+}
+.titre-section h2{
+
+    font-size: 40px;
+}
+.titre-section img{
+    width: 90pxq;
+}
+.propos-texte-complet h3{
+    font-size: 35px;
+}
+.propos-texte-complet p{
+    font-size: 25px;
+}
+
+.propos-carte1 h3 {
+    font-size: 35px;
+}
+.propos-carte1 p{
+    font-size: 25px;
+    margin-left: 20px;
+    
+}
+.propos-carte1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+#cours{
+    margin-left: 40px;
+}
+.cours-texte h3{
+    font-size: 35px;
+}
+.cours-texte p{
+    font-size: 25px;
+}
+
+
+.filtre h4{
+    font-size: 30px;
+}
+.select{
+    width: 45%;
+}
+
+.select label{
+    font-size: 25px;
+
+}
+.select select {
+    font-size: 25px;
+}
+.selectes{
+    flex-direction: row;
+
+    
+}
+.filtre p{
+    font-size: 18px;
+}
+.cartes-cours{
+    grid-template-columns: repeat(2,1fr);
+    margin-right: 40px;
+    gap: 20px;
+}
+.carte{
+    width: 100%;
+}
+
+footer h3{
+    font-size: 35px;
+     margin-left: 40px;
+}
+
+footer p{
+    font-size: 25px;
+     margin-left: 40px;
+}
+footer a{
+    font-size: 25px;
+     margin-left: 40px;
+}
+
+    
+}
+
+@media screen and (min-width:1080px ){
+
+   .nav-barre{
+    width: 85%;
+   }
+   .navigation{
+    display: block;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+   }
+   .info-hero p{
+    width: 50%;
+    font-size: 12px;
+    
+   }
+   .hero-section{
+    flex-direction: row;
+    margin: 0 100px;
+    margin-top: 50px;
+   }
+   .hero-section img{
+    width: 40%;
+   }
+
+   .text-hero h1{
+    font-size: 55px;
+   }
+   .info-hero .text-hero p{
+    font-size: 30px;
+    font-weight:300;
+    
+   
+   }
+
+   #button-hero{
+    font-size: 20px;
+    width: 40%;
+    margin-top: 20px;
+   }
+
+   .info-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+   .propos{
+    margin: 150px 100px;
+   }
+   .titre-section h2{
+    font-size: 45px;
+
+   }
+   .titre-section img{
+    width:100px ;
+   }
+   .titre-section{
+    gap: 20px;
+   }
+   .propos-texte-complet h3{
+
+    width: 50%;
+   }
+   .propos-texte-complet p{
+    font-weight: 400;
+    font-size: 25px;
+   }
+   .propos-carte{
+    flex-direction: row;
+    width: 70%;
+   }
+   .propos-texte-complet{
+    gap: 50px;
+   }
+  .titre-carte1 h3{
+    font-size: 30px;
+  }
+  .titre-carte1 img{
+    width: 15%;
+  }
+  #cours{
+    margin: 0 100px;
+  }
+  .selectes{
+    width: 50%;
+  }
+  .cartes-cours{
+    grid-template-columns: repeat(4,1fr);
+   
+
+  }
+  footer{
+   display: flex;
+   align-items: flex-end;
+   padding-left: 100px;
+  }
+  .footer-par1{
+     width: 50%;
+  }
+  .ecole h3{
+    font-size: 20px;
+  }
+  .ecole p{
+    font-size: 15px;
+  }
+  .footer-par1 img{
+    width: 50%;
+   
+  }
+  .ecole a{
+    font-size: 15px;
+  }
+  .footer-par2{
+    margin: 0;
+  }
+  #ecole-2{
+    padding: 20px 0;
+    
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
