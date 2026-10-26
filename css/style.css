@@ -333,11 +333,11 @@ margin-top: 40px;
 }
 .carte #nivaux {
     background-color: var(--blue);
-    width: 25%;
+    width:fit-content ;
     color: white;
     border-radius: 20px;
     text-align: center;
-    padding: 3px 0;
+    padding: 3px 10px;
     margin-left: 10px;
 }
 .info-carte {

@@ -1,95 +1,109 @@
-
 {
   "cours": [
     {
       "id": 1,
       "matiere": "Math",
       "niveau": "1 Bac",
-      "prix": 250
+      "prix": 250,
+      "place": 8
     },
     {
       "id": 2,
       "matiere": "Physique",
       "niveau": "1 Bac",
-      "prix": 300
+      "prix": 300,
+      "place": 3
     },
     {
       "id": 3,
       "matiere": "SVT",
       "niveau": "1 Bac",
-      "prix": 220
+      "prix": 220,
+      "place": 12
     },
     {
       "id": 4,
       "matiere": "Français",
       "niveau": "1 Bac",
-      "prix": 180
+      "prix": 180,
+      "place": 0
     },
     {
       "id": 5,
       "matiere": "Anglais",
       "niveau": "1 Bac",
-      "prix": 200
+      "prix": 200,
+      "place": 6
     },
     {
       "id": 6,
       "matiere": "Math",
       "niveau": "2 Bac",
-      "prix": 350
+      "prix": 350,
+      "place": 2
     },
     {
       "id": 7,
       "matiere": "Physique",
       "niveau": "2 Bac",
-      "prix": 400
+      "prix": 400,
+      "place": 15
     },
     {
       "id": 8,
       "matiere": "SVT",
       "niveau": "2 Bac",
-      "prix": 320
+      "prix": 320,
+      "place": 5
     },
     {
       "id": 9,
       "matiere": "Français",
       "niveau": "2 Bac",
-      "prix": 230
+      "prix": 230,
+      "place": 9
     },
     {
       "id": 10,
       "matiere": "Anglais",
       "niveau": "2 Bac",
-      "prix": 250
+      "prix": 250,
+      "place": 1
     },
     {
       "id": 11,
       "matiere": "Math",
       "niveau": "Tronc Commun",
-      "prix": 220
+      "prix": 220,
+      "place": 11
     },
     {
       "id": 12,
       "matiere": "Physique",
       "niveau": "Tronc Commun",
-      "prix": 270
+      "prix": 270,
+      "place": 4
     },
     {
       "id": 13,
       "matiere": "Français",
       "niveau": "3eme annee college",
-      "prix": 160
+      "prix": 160,
+      "place": 7
     },
     {
       "id": 14,
       "matiere": "Math",
       "niveau": "3eme annee college",
-      "prix": 190
+      "prix": 190,
+      "place": 0
     },
     {
       "id": 15,
       "matiere": "Anglais",
       "niveau": "Tronc Commun",
-      "prix": 210
+      "prix": 210,
+      "place": 13
     }
   ]
 }
