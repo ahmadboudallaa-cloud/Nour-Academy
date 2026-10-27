@@ -471,6 +471,118 @@ footer h3 {
     
 
 }
+.carte-panier{
+    display: flex;
+    width: 90%;
+    background-color: var(--orange);
+    padding: 5px;
+    border-radius: 20px;
+    gap: 10px;
+    align-items: center;
+}
+.carte-panier img{
+    width: 30%;
+    border-radius: 20px;
+
+}
+.prix-retirer{
+    display: flex;
+}
+.info-carte-panier{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+.titre-carte-panier h2{
+    color: var(--blue);
+   font-family: var(--font-titre);
+
+}
+.titre-carte-panier h3{
+    color: white;
+    font-family: var(--font-titre);
+}
+
+.prix-retirer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prix-retirer p{
+    color: var(--blue);
+    font-size: 35px;
+    font-weight: bold;
+
+
+}
+.prix-retirer .madmois{
+    font-size: 15px;
+    color: var(--blanc-casser);
+
+}
+.prix-retirer button{
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 3px 8px;
+    color: white;
+
+    
+}
+
+.panier-complet{
+    background-color: var(--blanc-casser);
+    width: 96%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 3px var(--orange);
+    padding: 20px 0;
+    gap: 10px;
+}
+.titre-panier{
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.titre-panier h1{
+    color: var(--blue);
+    font-size: 40px;
+    font-family: var(--font-titre);
+}
+.titre-panier .tres-panier{
+    background-color: var(--blue);
+    height: 2px;
+    width: 96%;
+}
+
+.cartes-paniers{
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+  
+}
+
+
+.cartes-total{
+    width: 89%;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+
+
 
 
 @media screen and (min-width: 768px) {
