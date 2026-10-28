@@ -946,6 +946,9 @@ footer a{
    width: 2px;
    background-color: var(--blue);
 }
+.panier-deux{
+    width: 80%;
+}
 
 
 
