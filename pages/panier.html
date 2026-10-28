@@ -69,16 +69,16 @@
     <div class="info-total-carte">
         <div class="info-total">
             <h3>Total Cours :</h3>
-            <p>2</p>
+            <p id="cours-selec"></p>
         </div>
         <div class="info-total">
             <h3>Total Prix :</h3>
-        <p>700</p>
+        <p id="total-prix"></p>
     </div>
     <div class="tres-total"></div>
      <div class="info-total">
-            <h3>Total</h3>
-        <p class="prix-total">350 <span class="prix-mois">MAD/Mois</span></p>
+        <h3>Total</h3>
+        <p class="prix-total" id="prix-total"></p>
     </div>
     <button id="btn-panier">Passer la demande</button>
     </div>
@@ -92,6 +92,32 @@
 </section>
     
 
+<form id="form-commande">
+    <h2>Informations du client</h2>
+
+    <div class="champ">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+    </div>
+
+    <div class="champ">
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+    </div>
+
+    <div class="champ">
+        <label for="telephone">Numéro de téléphone</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="06XXXXXXXX" required>
+    </div>
+
+    <div class="champ">
+        <label for="adresse">Adresse</label>
+        <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse" required>
+    </div>
+
+    <button type="submit">Passer la commande</button>
+</form>
+
     </main>
 
 
@@ -102,6 +128,6 @@
 
     </section>
     <script type="module" src="./../js/panier.js"></script>
-</body>
+    
 
 </html>

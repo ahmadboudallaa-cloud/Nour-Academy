@@ -396,13 +396,20 @@ margin-top: 40px;
     padding: 0 0 8px 5px;
     
 }
+.btn-carte:disabled {
+    background-color: #808080 !important;
+    color: #ffffff !important;
+    cursor: not-allowed;
+    opacity: 0.7;
+    border: none;
+}
 .info p{
     font-size: 15px;
     font-family: var(--font-texte);
     color: var(--blanc-casser);
 }
 
-#btn-carte{
+.btn-carte{
     background-color: var(--blue);
     border: none;
    font-size: 18px;
@@ -410,7 +417,7 @@ margin-top: 40px;
     padding: 0 10px;
     color: white;
 }
-#btn-carte:hover{
+.btn-carte:hover{
     background-color: var(--blanc-casser);
     color: var(--blue);
     border: var(--blue) 2px solid;

@@ -1,15 +1,21 @@
- const data = await fetch("./../data/data.json");
-const courses = await data.json();
-
-
-
 
 
 
 const donneesPanier = localStorage.getItem("panier");
 const selectionCours = JSON.parse(donneesPanier) || [];
+ const total = selectionCours.reduce((somme, cours) => {
+    return somme + Number(cours.prix);
+}, 0);
+
+document.getElementById("prix-total").innerHTML =
+    `${total} <span class="prix-mois">MAD/Mois</span>`;
+document.getElementById("total-prix").innerHTML = `${total}`
+
 
 const panierCarte = document.getElementById("cartes-paniers");
+
+document.getElementById("cours-selec").innerHTML = `${panierCarte.length}`
+
 
 selectionCours.forEach(cours => {
     panierCarte.innerHTML += `
@@ -27,7 +33,10 @@ selectionCours.forEach(cours => {
             </div>
         </div>
     `;
+
+    
 });
+document.getElementById("cours-selec").innerHTML = `${selectionCours.length}`
 
 const buttonRetirer = panierCarte.querySelectorAll("button");
 
@@ -44,4 +53,5 @@ buttonRetirer.forEach(button => {
         location.reload();
     });
 });
+
 
