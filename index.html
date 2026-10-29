@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Nour Academy</title>
 </head>
-<body>
+<body  id="accueil">
 
     <nav class="nav-barre">
         <img class="logo" src="./images/logo.webp" alt="">
@@ -26,15 +26,13 @@
         
             <section class="panier-account">
               <div class="panier-logo">
-                   <a href="#propos"> <img src="./images/sac-de-courses (1).webp" alt=""></a>
+                   <a href="./pages/panier.html"> <img src="./images/sac-de-courses (1).webp" alt=""></a>
                 </div> 
-                <div class="number">
-                    <p>1</p>
-            </div> 
+                
             <div class="account">
-          <div class="account">
-           <img src="./images/utilisateur.webp" alt="">
-            </div>
+        
+           <a href="#cours"><img src="./images/utilisateur.webp" alt=""></a>
+        
             </div>
             </section>
 
@@ -126,57 +124,34 @@
                 <div class="select">
                     <label for="nivaux">Nivaux</label>
                     <select name="nivaux" id="nivaux">
-                        <option value="tous">Tous les Nivaux</option>
-                        <option value="bac1">1 Bac</option>
-                        <option value="bac2">2 Bac</option>
-                        <option value="Tronc">Tronc Commun</option>
-                        <option value="college">3eme annee college</option>
+                        <option value="">Tous les Nivaux</option>
+                        <option value="1 Bac">1 Bac</option>
+                        <option value="2 Bac">2 Bac</option>
+                        <option value="Tronc Commun">Tronc Commun</option>
+                        <option value="3eme annee college">3eme annee college</option>
                     </select>
                 </div>
 
                   <div class="select">
                     <label for="matiere">Matiere</label>
                     <select name="matiere" id="matiere">
-                        <option value="tous">Tous les matieres</option>
-                        <option value="math">Math</option>
-                        <option value="physique">Physique</option>
-                        <option value="svt">SVT</option>
-                        <option value="francais">Francais</option>
-                        <option value="anglais">Anglais</option>
+                        <option value="">Tous les matieres</option>
+                        <option value="Math">Math</option>
+                        <option value="Physique">Physique</option>
+                        <option value="SVT">SVT</option>
+                        <option value="Français">Français</option>
+                        <option value="Anglais">Anglais</option>
                     </select>
                 </div>
                 </div>
-                <p>12 cours disponibles</p>
+                <p id="nombreCourses"></p>
 
             </div>
 
 
 
-            <div class="cartes-cours">
-                <div class="carte">
-                    <img src="./images/math.webp" alt="image du cours">
-    
-                    <p id="nivaux">Primaire</p>
-                    <div class="info-carte">
-                    <h3>Mathématiques </h3>
-                    <p>Lundi & mercredi · 16h</p>
-                    </div>
-
-                    <div class="info-prix">
-                        <div class="prix-carte">
-                        <p id="prix">350</p>
-                        <div class="info">
-                            
-                        <p >MAD / Mois</p>
-                        </div>
-                        </div>
-                        <button id="btn-carte"> Selectioner</button>
-
-                    </div>
-
-                    <p id="place">8 places restants</p>
-                   
-                </div>
+            <div id="cours-cartes" class="cartes-cours">
+                
 
                
            
@@ -193,6 +168,14 @@
 
 
 
+        <section id="pannier">
+
+
+        </section>
+
+<section class="scrole">
+<a href="#accueil">⬆</a>
+</section>
 
     </main>
 

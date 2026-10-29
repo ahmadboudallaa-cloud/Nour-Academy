@@ -22,12 +22,14 @@ body{
    
 }
 a{
-    text-decoration: none;}
+    text-decoration: none;
+}
 .nav-barre{
 
     width: 90%;
     height: 80px;
     margin: 20px auto ;
+    padding: 0 40px;
     background-color: var(--blanc-casser);
     border-radius: 50px;
     display: flex;
@@ -39,7 +41,7 @@ a{
 .nav-barre .logo{
     height: 80%;
     width: 150px;
-     margin-left: 50px;
+     
     
 }
 .navigation{
@@ -53,66 +55,79 @@ a{
     color: black;
     font-family: var(--font-texte);
 }
-.navigation .selectionner {
 
+.navigation a:hover{
     background-color: var(--orange);
-    padding: 3px 15px;
+    padding: 3px 10px;
     border-radius: 30px;
     color: white;
+    transition: 0.5s;
     
 }
+
 .panier-account{
-    display: flex;  
-    
-   
-   
-    
+    display: flex;
+    align-items: center;  
+  width: 30%;
+  height: 100%;
+    gap: 10px;
+  
 }
 
 .panier-logo{
     background-color: var(--orange);
-    width: 25%;
-    padding: 5px;
-    border-radius: 100%;
-    position: relative;
-
-     
+    width: 43%;
+    padding: 3px 5px;
+    border-radius: 100%; 
     
+}
+.panier-logo:hover{
+    width: 53%;
 }
 .panier-logo img{
    height: auto;
     width: 100%;
 
 }
-.number{
-    background-color: var(--blue);
-     padding:  1px 3px;
-    border-radius: 100%;
-    position: absolute;
-    color: white;
-  font-size: 12px;
-  margin-left: 24px;
- 
-}
-.panier-compte{
+.scrole{
+    position: fixed;
+    top: 90%;
+    right: 2px;
+    width: 100%;
     display: flex;
-    height: 45%;
-}
-.account{
-    position: absolute;
+    justify-content: flex-end;
+    z-index: 999;
     
     
 }
+.scrole a{
+ color: white;
+ background-color: var(--orange);
+ font-size: 30px;
+ padding: 2px 10px;
+ border-radius: 100%;
+
+
+}
+
+
+
 .account img{
-   width: 70%;
-  
- margin-left: 45px;
+   width: 100%;
+
    border: #F28D2B 2px solid;
    border-radius: 100%;
    padding: 3px;
 
 
    
+}
+.account{
+    width: 45%;
+    
+}
+.account:hover{
+    width: 50%;
 }
 .info-hero p{
  font-size: var(--size-text-mobile);
@@ -163,6 +178,14 @@ a{
     padding: 13px 5px ;
     border: none;
 }
+#button-hero:hover{
+    
+    color: var(--blue);
+    background-color: var(--blanc-casser);
+    border: var(--orange) 2px solid;
+    transition: 0.6s;
+}
+
 .hero-section img {
     width: 95%;
     height: 270px;
@@ -333,11 +356,11 @@ margin-top: 40px;
 }
 .carte #nivaux {
     background-color: var(--blue);
-    width: 25%;
+    width:fit-content ;
     color: white;
     border-radius: 20px;
     text-align: center;
-    padding: 3px 0;
+    padding: 3px 10px;
     margin-left: 10px;
 }
 .info-carte {
@@ -373,13 +396,20 @@ margin-top: 40px;
     padding: 0 0 8px 5px;
     
 }
+.btn-carte:disabled {
+    background-color: #808080 !important;
+    color: #ffffff !important;
+    cursor: not-allowed;
+    opacity: 0.7;
+    border: none;
+}
 .info p{
     font-size: 15px;
     font-family: var(--font-texte);
     color: var(--blanc-casser);
 }
 
-#btn-carte{
+.btn-carte{
     background-color: var(--blue);
     border: none;
    font-size: 18px;
@@ -387,6 +417,12 @@ margin-top: 40px;
     padding: 0 10px;
     color: white;
 }
+.btn-carte:hover{
+    background-color: var(--blanc-casser);
+    color: var(--blue);
+    border: var(--blue) 2px solid;
+}
+
 .info-prix {
     display: flex;
     justify-content: space-between;
@@ -433,11 +469,194 @@ footer h3 {
     gap: 10px;
 }
 
+.selection-panier{
+    background-color: var(--blanc-casser);
+    border: var(--orange) solid 3px;
+    border-radius: 30px;
+    width: 80%;
+    height: 90%;
+    
+
+}
+.carte-panier{
+    display: flex;
+    width: 90%;
+    background-color: var(--orange);
+    padding: 5px;
+    border-radius: 20px;
+    gap: 10px;
+    align-items: center;
+}
+.carte-panier img{
+    width: 30%;
+    border-radius: 20px;
+
+}
+.prix-retirer{
+    display: flex;
+}
+.info-carte-panier{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+.titre-carte-panier h2{
+    color: var(--blue);
+   font-family: var(--font-titre);
+
+}
+.titre-carte-panier h3{
+    color: white;
+    font-family: var(--font-titre);
+}
+
+.prix-retirer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prix-retirer p{
+    color: var(--blue);
+    font-size: 35px;
+    font-weight: bold;
+
+
+}
+.prix-retirer .madmois{
+    font-size: 15px;
+    color: var(--blanc-casser);
+
+}
+.prix-retirer button{
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 3px 8px;
+    color: white;
+
+    
+}
+
+.panier-complet{
+    background-color: var(--blanc-casser);
+    width: 96%;
+    margin:10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 3px var(--orange);
+    padding: 20px 0;
+    gap: 10px;
+}
+.titre-panier{
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.titre-panier h1{
+    color: var(--blue);
+    font-size: 40px;
+    font-family: var(--font-titre);
+}
+.titre-panier .tres-panier{
+    background-color: var(--blue);
+    height: 2px;
+    width: 96%;
+}
+
+.cartes-paniers{
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+  
+}
+
+
+.cartes-total{
+    width: 89%;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.titre-total h2{
+    color: var(--orange);
+    font-size: 30px;
+    font-family: var(--font-texte);
+}
+.titre-total .tres-total{
+    height: 3px;
+    width: 90%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.info-total{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.info-total h3{
+    color: var(--orange);
+    
+}
+.info-total p{
+    color: white;
+}
+.info-total-carte {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info-total-carte .tres-total{
+    height: 2px;
+    width: 90%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.prix-mois{
+    font-size: 10px;
+}
+#btn-panier{
+    width: fit-content;
+    margin: 10px auto 5px auto;
+    background-color: var(--orange);
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    
+}
+.panier-deux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+#btn-panier:hover{
+    border: var(--orange) solid 2px;
+    background-color: white;
+    color: var(--orange);
+}
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
-
+.panier-complet{
+    width: 70%;
+}
 .nav-barre{
-    width: 95%;
+    width: 80%;
 }
 
 .info-hero p {
@@ -546,6 +765,10 @@ footer h3 {
 }
 .carte{
     width: 100%;
+}
+.panier-account{
+
+     width: 15%;
 }
 
 footer h3{
@@ -686,6 +909,56 @@ footer a{
     padding: 20px 0;
     
   }
+
+  .panier-account{
+    width: 8%;
+  }
+
+  .scrole{
+    
+    right: 15px;
+}
+.scrole a{
+
+ font-size: 40px;
+ padding: 0px 15px;
+ 
+
+
+}
+
+.panier-deux{
+    flex-direction: row;
+    align-items: flex-start;
+}
+.cartes-paniers{
+    width: 100%;
+}
+.cartes-total{
+    width: 50%;
+}
+.panier-complet{
+
+    align-items: flex-start;
+    padding: 20px 40px;
+    
+}
+.carte-panier img{
+    width: 25%;
+    
+}
+.tres-milieu-panier{
+
+   height: 350px;
+   width: 2px;
+   background-color: var(--blue);
+}
+.panier-deux{
+    width: 80%;
+}
+
+
+
   
 
 }
