@@ -98,26 +98,3 @@ btnSelection.forEach(button => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
