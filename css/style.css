@@ -648,6 +648,204 @@ footer h3 {
 
 
 
+/* Fond du formulaire */
+.formulaire-inscription {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(17, 24, 39, 0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    z-index: 1000;
+}
+
+.formulaire-inscription.active {
+    display: flex;
+}
+
+/* Conteneur principal */
+.form-inscription {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 576px;
+    padding: 32px;
+    border-radius: 16px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* En-tête */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.form-header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #13538a;
+    margin: 0;
+}
+
+.form-header p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 6px;
+}
+
+.btn-fermer {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #6b7280;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.btn-fermer:hover {
+    color: #13538a;
+}
+
+/* Contenu */
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Groupes */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Champs */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #374151;
+    background-color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #13538a;
+    box-shadow: 0 0 0 3px rgba(19, 83, 138, 0.1);
+}
+
+/* Cours du panier */
+.cours-selectionnes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+}
+
+.cours-item span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #13538a;
+}
+
+.cours-item small {
+    font-size: 13px;
+    font-weight: 600;
+    color: #f28d2b;
+    white-space: nowrap;
+}
+
+/* Erreur */
+.message-erreur {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+/* Boutons */
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.form-actions button {
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Enregistrer */
+.btn-enregistrer {
+    background-color: #f28d2b;
+    color: #ffffff;
+    border: 1px solid #f28d2b;
+}
+
+.btn-enregistrer:hover {
+    background-color: #df7818;
+}
+
+/* Annuler */
+.btn-annuler {
+    background-color: #ffffff;
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.btn-annuler:hover {
+    background-color: #f3f4f6;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .form-inscription {
+        padding: 20px;
+    }
+
+    .form-header h3 {
+        font-size: 20px;
+    }
+
+    .form-actions button {
+        flex: 1;
+    }
+}
+
+
+
 
 
 

@@ -1,6 +1,4 @@
 
-
-
 const donneesPanier = localStorage.getItem("panier");
 const selectionCours = JSON.parse(donneesPanier) || [];
  const total = selectionCours.reduce((somme, cours) => {
@@ -52,6 +50,62 @@ buttonRetirer.forEach(button => {
 
         location.reload();
     });
+});
+
+
+
+const formulaire = document.getElementById("formulaire");
+const coursSelectionnes = document.getElementById("coursSelectionnes");
+const nomsEleves = document.getElementById("nomsEleves");
+const formInscription = document.getElementById("formInscription");
+
+
+window.ouvrirFormulaire = function () {
+
+    if (selectionCours.length === 0) {
+        alert("Votre panier est vide !");
+        return;
+    }
+
+    coursSelectionnes.innerHTML = "";
+    nomsEleves.innerHTML = "";
+
+    
+    selectionCours.forEach(cours => {
+        coursSelectionnes.innerHTML += `
+            <div class="cours-item">
+                <span>${cours.matiere} - ${cours.niveau}</span>
+                <small>${cours.prix} MAD/Mois</small>
+            </div>
+        `;
+    });
+
+    const niveaux = [...new Set(selectionCours.map(cours => cours.niveau))];
+
+    niveaux.forEach((niveau, index) => {
+        nomsEleves.innerHTML += `
+            <div class="form-group">
+                <label>Nom de l'enfant (${niveau})</label>
+                <input type="text" name="eleves" required
+                    placeholder="Nom complet de l'enfant ${index + 1}">
+            </div>
+        `;
+    });
+
+    formulaire.classList.add("active");
+};
+window.fermerFormulaire = function () {
+    formulaire.classList.remove("active");
+};
+
+
+
+formInscription.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    alert("Votre inscription a été effectuée avec succès !");
+
+    fermerFormulaire();
 });
 
 

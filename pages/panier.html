@@ -80,7 +80,7 @@
         <h3>Total</h3>
         <p class="prix-total" id="prix-total"></p>
     </div>
-    <button id="btn-panier">Passer la demande</button>
+    <button id="btn-panier" onclick="ouvrirFormulaire()">Passer la demande</button>
     </div>
 
 
@@ -92,31 +92,58 @@
 </section>
     
 
-<form id="form-commande">
-    <h2>Informations du client</h2>
 
-    <div class="champ">
-        <label for="nom">Nom complet</label>
-        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+<div id="formulaire" class="formulaire-inscription">
+
+  <form id="formInscription" class="form-inscription">
+
+    <div class="form-header">
+      <div>
+        <h3>Finaliser l'inscription</h3>
+        <p>Remplis les informations de l'élève.</p>
+      </div>
+
+      <button type="button" onclick="fermerFormulaire()" class="btn-fermer">
+        &times;
+      </button>
     </div>
 
-    <div class="champ">
-        <label for="email">Adresse e-mail</label>
-        <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+    <div class="form-content">
+
+     <div id="nomsEleves" class="form-content"></div>
+      <div class="form-group">
+        <label>Cours sélectionnés</label>
+
+        <div id="coursSelectionnes" class="cours-selectionnes">
+         
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="telephone">Téléphone du parent</label>
+        <input type="tel" id="telephone"
+          placeholder="0612345678" required>
+      </div>
+
     </div>
 
-    <div class="champ">
-        <label for="telephone">Numéro de téléphone</label>
-        <input type="tel" id="telephone" name="telephone" placeholder="06XXXXXXXX" required>
+    <p id="erreur" class="message-erreur"></p>
+
+    <div class="form-actions">
+      <button type="submit" class="btn-enregistrer">
+        Confirmer l'inscription
+      </button>
+
+      <button type="button" onclick="fermerFormulaire()" class="btn-annuler">
+        Annuler
+      </button>
     </div>
 
-    <div class="champ">
-        <label for="adresse">Adresse</label>
-        <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse" required>
-    </div>
+  </form>
+</div>
 
-    <button type="submit">Passer la commande</button>
-</form>
+
 
     </main>
 
